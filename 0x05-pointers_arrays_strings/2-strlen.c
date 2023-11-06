@@ -2,18 +2,17 @@
 #include <stdio.h>
 
 /**
- * _strlen - return the length of the string
+ * main - check the code
  *
- * @s: is out test value to pass as an array
- * Return: returns the length
+ * Return: Always 0.
  */
-int _strlen(char *s) {
-  int i;
+int main(void)
+{
+    char *str;
+    int len;
 
-  i = 0;
-
-  while (s[i] != '\0') {
-    i++;
-  }
-  return i;
+    str = "My first strlen!";
+    len = _strlen(str);
+    printf("%d\n", len);
+    return (0);
 }
